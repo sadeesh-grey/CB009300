@@ -1,0 +1,404 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    font-size: large;
+    box-sizing: border-box;
+
+}
+
+/* the main Navigation Bar*/
+.mainNav{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #85DE8E;
+    width: 100%;
+    height: 90px;
+    z-index: 1;
+    font-size: large;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    font-weight: bold;
+    list-style: none;
+    margin-right: 10%; 
+}
+
+.logo{
+    flex : 1 1 auto;
+    margin-left: 5%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 70px;
+    font-size: 40px;
+}
+
+nav a{
+    margin: 10px;
+    color: rgb(17, 16, 16);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 30px;
+    height: 3px;
+    background-color: rgb(236, 234, 234);
+    margin: 6px;
+    transition: all 0.3s ease;
+}
+
+/*mobile veiw*/
+
+@media (max-width:700px){
+        .nav{
+            position: absolute;
+            right: 0px;
+            height: 92vh;
+            top: 14vh;
+            background-color: #85DE8E;
+            margin-right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            transform: translate(100%);
+            transition: transform 0.5s ease-in;
+     }
+     .nav li{
+        opacity: 0;
+        color: black;
+     }
+     .burger{
+         display: block;
+         margin: 40px;
+     }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@media (max-width : 1052px) 
+{
+    div.container1{
+        font-size: 10px;
+    }
+    
+}
+@media (max-width : 370px) 
+{
+ div.container{
+     font-size: smaller;
+ }   
+}
+
+
+
+
+/*animation to the burger*/
+.toggle .line1{
+       transform: rotate(-45deg) translate(-7px,6px);
+}
+.toggle .line2{
+       opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-7px,-6px);
+}
+
+
+/* main image*/
+img{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    -webkit-background-size : cover;
+    background-size: cover;
+}
+
+/*RESPONSIVE IMAGE*/
+.responsive{
+    max-width: 100%;
+}
+
+.nav a:hover {
+    background-color: #00A86B;
+}
+
+.subNav a{
+    color: black;
+}
+
+#subImg {
+    width: 75%;
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 200px;
+    max-height: 400px;
+    margin: 1em;
+}
+
+/* margin of the page*/
+main{
+    margin: 0;
+}
+
+/*FOOTER CSS*/
+footer ul {
+    list-style-type: none;
+    color:  #F7D7B5;
+    line-height: 40px;
+}
+footer{
+    background: #474747;
+    padding: 1em;
+}
+footer a:hover {
+    text-decoration: underline;
+    color : #00A86B;
+}
+
+/*FOOTER CSS ENDS*/
+.container1{
+    display:flex;
+}
+
+.text-col{
+    font-size: 26px;
+}
+
+.img-col{
+    width: 75%;
+}
+
+.subNav a:hover {
+    text-decoration: underline;
+    color : #00A86B;
+}
+
+.container2{
+    display:flex;
+    width: auto;
+}
+/* alter the font size of the header in the content*/
+h4,h5,h6{
+    font-size: 27px;
+}
+
+/*END OF HOME PAGE*/
+
+/*GRID FOR PICTURES CSS*/
+
+#subImg{
+    width: 200%;
+    height: auto;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#newsContainer img {
+    max-width: 290px;
+    align-content:center;
+    margin-left: 55px;
+}
+
+#newsContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
+
+#newsContainer .container {
+    margin: .8em .2em;
+    width: calc(33% - .4em);
+    box-sizing: border-box;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    background-color: rgba(90, 236, 151, 0.2);
+    font-family: 'Quicksand', sans-serif;
+}
+
+#newsContainer h3, #newsContainer p {
+    width: 90%;
+    padding: 0;
+    margin: 1em auto;
+} 
+
+.button {
+    padding: .8em;
+    background-color: #5df0ab;
+    color: rgb(17, 17, 17);
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    margin: 8em auto .8em 0;
+    width: 100px;
+}
+
+#newsContainer img{
+    max-width: 290px;
+    max-height: 300px;
+    
+}
+
+#boxes{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    grid-gap: 40px;
+    justify-content: baseline;
+}
+
+.container a:hover{
+    text-decoration: underline;
+}
+/*END OF PICTURES CSS*/
+
+/* TABLE CSS*/
+.content-table{
+    border-collapse: collapse;
+    margin: 50px 70px;
+    font-size: 27px;
+    min-width: 1100px;
+    min-height: 300px;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 20px 20px 0 0;
+    /*makes sure that the border radius works correctly*/
+    overflow: hidden;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.15);
+}
+
+.content-table thead tr
+{
+    background-color: #009879;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+
+.content-table th,
+.content-table td {
+
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom:  3px solid #dddddd;
+
+}
+
+.content-table tbody tr :nth-of-type(even){
+
+    background-color: #cac7c7;
+}
+
+.content-table tbody tr:last-of-type{
+    border-bottom:  2px solid #009879;
+}
+
+.content-table tbody tr.active-row{
+    font-weight: bold;
+    color: #009879;
+}
+
+/*FOR THE TYPES OF ANIMALS AND PLANTS HEADER*/
+h1,h8{
+    font-family: 'Quicksand', sans-serif;
+    color: #009879;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-left: 350px;
+}
+
+/*END OF TYPES PAGE*/
+
+/*START OF ACTIVITIES PAGE*/
+
+.activity{
+    background-color: #5df0ab;
+}
+
+.banner{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*TEXT ON THE IMAGE*/
+.heading{
+    color: #009879;
+    position: absolute;
+    padding: 0%;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    text-shadow: 5px 5px 10px #000; 
+}
+
+#subImg1{
+    width: 1100px;
+    height: 500px;
+}
+
+h1{
+    text-align: center;
+    margin-left: 0;
+    color: #050505;
+    text-decoration: none;
+    text-shadow: 5px 5px 10px #000;
+    font-size: 70px;
+}
+
+.row ul li{
+    font-family: 'Poppins',sans-serif;
+    font-size: 25px;
+}
+
+.banner a{
+    color: #009879;
+}
+
+/*END OF ACTIVITIES PAGE*/
+
+/*START OF DONATIONS PAGE*/
+
+.donations{
+    background-color: #5df0dc;
+}
+
+/*END OF DONATIONS PAGE*/
+
+
+
+
+
+

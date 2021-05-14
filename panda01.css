@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.mainNav{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #111111;
+    width: 100%;
+    height: 90px;
+    z-index: 1;
+    font-size: large;
+}
+
+.nav {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 15%; 
+}
+
+.logo{
+    flex : 1 1 auto;
+    margin-left: 10%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 70px;
+    font-size: 31px;
+}
+
+a{
+    margin: 10px;
+    color: rgb(224, 221, 221);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header{
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    color: #00A86B;
+    font-family:'Hammersmith One', sans-serif ;
+}
+
+footer ul {
+    list-style-type: none;
+    color:  #F7D7B5;
+    line-height: 40px;
+}
+footer{
+    background: #474747;
+    padding: 1em;
+}
+footer a:hover {
+    text-decoration: underline;
+    color : #00A86B;
+} 
+
+#container {
+    width:80%;
+    margin: auto;
+    padding: 3em;
+    background:rgba(236, 238, 238, 0.8);
+    box-shadow: 0 0 20px rgb(19, 19, 19); 
+}
+
+.myP {
+    height:180px;
+    margin: 3em;
+    padding:2em;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size:2.5em;
+    border:1em dotted  #121312;
+    color:rgb(22, 34, 21);
+    background:url(images/sticker.png)  rgba(236, 238, 238, 0.8) no-repeat top right ;
+}
+
+body {
+    background: url(images/animals-zoo-panda.jpg) no-repeat center center fixed;
+    background-size:cover;
+}
+
+.nContainer{
+    text-align: center;
+}
+
+#nContainer a{
+    color: rgb(8, 8, 8);
+}
+
+#nContainer a:hover{
+    text-decoration: underline;
+    color: rgb(46, 112, 51);
+}
+
+/*animation*/
+
+#animal{
+    padding-top: 80px;
+    height: 192px;
+    width: 250px;
+    background: url(images/octocat.png) no-repeat center center;
+    animation-name: squarePath;
+    animation-duration: 3s;
+    -webkit-animation-name: squarePath;
+    -webkit-animation-duration: 3s;
+
+}
+
+@keyframes squarePath {
+    0%, 100%{
+        transform: translate(0,0);
+        transform: rotate(90deg);
+
+    }
+    25%{
+        transform: translate(500px,0);
+        opacity: 0s;
+    }
+    50%{
+        transform: translate(500px,150px);
+    }
+    75%{
+        transform: translate(0,150px);
+    }
+}
+@-webkit-keyframes squarePath {
+    0%, 100%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(500px,0);
+    }
+    50%{
+        transform: translate(500px,150px);
+    }
+    75%{
+        transform: translate(0,150px);
+    }
+}
+
+
+
+

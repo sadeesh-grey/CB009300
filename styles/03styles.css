@@ -1,0 +1,23 @@
+#container {
+    width:80%;
+    margin:2em auto;
+    padding:1em;
+    background:rgba(236, 238, 238, 0.8);
+    box-shadow: 0 0 20px rgb(19, 19, 19); 
+}
+
+.myP {
+    height:180px;
+    margin:2em;
+    padding:2em;
+    font-size:2em;
+    border:2em dotted #BEBDBD;
+    color:whitesmoke;
+    background:url(images/sheep.png) rgb(20, 20, 20) no-repeat;
+}
+
+body {
+    background: url(images/) no-repeat center center fixed;
+    background-size:cover;
+}
+

@@ -1,0 +1,52 @@
+#container {
+    width:80%;
+    margin: auto;
+    padding: 3em;
+    background:rgba(236, 238, 238, 0.8);
+    box-shadow: 0 0 20px rgb(19, 19, 19); 
+}
+
+.myP {
+    height:180px;
+    margin: 3em;
+    padding:2em;
+    font-family: sans-serif;
+    font-size:2.5em;
+    border:1em dotted #009879;
+    color:rgb(89, 182, 77);
+    background:url(images/sticker.png)  rgba(236, 238, 238, 0.8) no-repeat top right ;
+}
+
+.container p4{
+    font-size: 28px;
+}
+
+#sea{
+    width: 800px;
+    height: 600px;
+    background: url(images/sea.jpg) center center no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+
+}
+
+#animal{
+    padding-top: 150px;
+    height: 193px;
+    width: 250px;
+    background: url(images/octocat.png) no-repeat center center;
+
+}
+
+#animal :hover{
+    transform: translate(50px,100px);
+    -webkit-transform: translate(500px,100px);
+}
+
+
+
+
+
+
+
+
